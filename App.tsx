@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import StartScreen from './components/StartScreen';
-import QuestionCard from './components/QuestionCard';
-import ResultCard from './components/ResultCard';
-import { QUIZ_DATA } from './constants';
-import type { Question, UserAnswer } from './types';
+import StartScreen from './components/StartScreen.js';
+import QuestionCard from './components/QuestionCard.js';
+import ResultCard from './components/ResultCard.js';
+import { QUIZ_DATA } from './constants.js';
+import type { Question, UserAnswer } from './types.js';
 
 const App: React.FC = () => {
   const [gameState, setGameState] = useState<'start' | 'playing' | 'finished'>('start');

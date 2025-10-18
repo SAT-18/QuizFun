@@ -1,5 +1,5 @@
 import React from 'react';
-import type { UserAnswer } from '../types';
+import type { UserAnswer } from '../types.js';
 
 interface ResultCardProps {
   score: number;
