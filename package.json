@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "tsc"
+    "build": "tsc && cp index.html dist/"
   },
   "dependencies": {
     "react": "^19.2.0",
