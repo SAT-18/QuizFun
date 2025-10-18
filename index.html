@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuizFun HD Edu</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Uji wawasanmu dengan QuizFun HD! Kuis interaktif dengan berbagai tingkat kesulitan, bantuan 50:50, dan papan skor lokal. Mainkan sekarang!">
+  <meta name="keywords" content="kuis, quiz, indonesia, edukasi, interaktif, game, cerdas cermat, quizfun">
+  <meta name="author" content="SAT18 Official">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://quizfun.pages.dev/">
+  <meta property="og:title" content="QuizFun HD Edu - Kuis Interaktif Menantang">
+  <meta property="og:description" content="Uji wawasanmu dengan kuis interaktif dengan berbagai tingkat kesulitan, bantuan 50:50, dan papan skor lokal.">
+  <meta property="og:image" content="https://quizfun.pages.dev/icon.svg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://quizfun.pages.dev/">
+  <meta property="twitter:title" content="QuizFun HD Edu - Kuis Interaktif Menantang">
+  <meta property="twitter:description" content="Uji wawasanmu dengan kuis interaktif dengan berbagai tingkat kesulitan, bantuan 50:50, dan papan skor lokal.">
+  <meta property="twitter:image" content="https://quizfun.pages.dev/icon.svg">
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💡</text></svg>">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="importmap">
+    {
+      "imports": {
+        "react": "https://aistudiocdn.com/react@^19.2.0",
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+        "react/": "https://aistudiocdn.com/react@^19.2.0/"
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .animated-gradient {
+      background: linear-gradient(135deg, #89f7fe, #66a6ff, #ff8b8b, #ffdd8b);
+      background-size: 400% 400%;
+      animation: gradientAnimation 15s ease infinite;
+    }
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .fadeInUp {
+      animation: fadeInUp 0.5s ease-in-out forwards;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .btn-3d {
+      position: relative;
+      border: none;
+      transition: all 0.2s ease;
+      box-shadow: 0 6px #1e40af, 0 8px 15px rgba(0,0,0,0.2);
+      border-radius: 12px;
+    }
+    .btn-3d:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px #1e40af, 0 10px 20px rgba(0,0,0,0.25);
+    }
+    .btn-3d:active {
+      transform: translateY(4px);
+      box-shadow: 0 2px #1e40af, 0 4px 5px rgba(0,0,0,0.3);
+    }
+    .shake {
+      animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+    }
+    @keyframes shake {
+      10%, 90% { transform: translate3d(-1px, 0, 0); }
+      20%, 80% { transform: translate3d(2px, 0, 0); }
+      30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+      40%, 60% { transform: translate3d(4px, 0, 0); }
+    }
+    .pulse {
+      animation: pulse 0.5s ease-in-out;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

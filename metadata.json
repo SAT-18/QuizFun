@@ -1,0 +1,5 @@
+{
+  "name": "QuizFun Interaktif",
+  "description": "An interactive web-based quiz application built with React and Tailwind CSS. Test your knowledge with multiple-choice questions, receive instant feedback, and see your final score.",
+  "requestFramePermissions": []
+}
