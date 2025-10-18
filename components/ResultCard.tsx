@@ -1,5 +1,6 @@
 import React from 'react';
 import type { UserAnswer } from '../types.js';
+import AdBanner from './AdBanner.js';
 
 interface ResultCardProps {
   score: number;
@@ -54,6 +55,9 @@ const ResultCard: React.FC<ResultCardProps> = ({ score, totalQuestions, onRestar
           ))}
         </ul>
       </div>
+
+      {/* Area Iklan AdSense */}
+      <AdBanner />
 
       <button
         onClick={onRestart}
