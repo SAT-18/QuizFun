@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "mkdir -p dist && cp App.tsx constants.ts index.html index.tsx metadata.json types.ts dist/ && cp -r components dist/"
+    "build": "tsc && cp index.html metadata.json dist/"
   },
   "dependencies": {
     "react": "^19.2.0",
